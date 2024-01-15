@@ -119,7 +119,6 @@ body {
   padding: 0 30px;
   margin: 0 auto;
 }
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -166,8 +165,43 @@ body {
   color: var(--p-color);
   font-weight: 600;
   padding: 5px 0 25px 0;
-
 }
+.see-more {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  background: none;
+  border: none;
+}
+.see-more-btn {
+  text-align: right;
+}
+
+/* features section */
+.features-section {
+  width: 100%;
+}
+.feature-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+.feature-container .feature-content {
+  display: flex;
+  align-items: center;
+}
+.feature-content .right-content {
+  padding-left: 90px;
+}
+.feature-content .right-content p {
+  padding: 16px 0;
+  color: var(--p-color);
+  font-size: 16px;
+}
+.feature-content .right-content h1 {
+  font-size: 38px;
+}
+
 /* Responsive for mobile device */
 @media (max-width: 576px) {
   /* Hero and nav section */
@@ -199,6 +233,16 @@ body {
   .right-img img {
     width: 350px;
   }
+  .hero-container {
+    padding: 30px 30px;
+  }
+  .right-img img {
+    order: 1;
+    padding-bottom: 30px;
+  }
+  .left-content {
+    order: 2;
+  }
 
   /* Sponsers Section */
   .sponser-container .sponser-content {
@@ -209,16 +253,33 @@ body {
   .sponser-container {
     padding: 0;
   }
-  
+
   /* popular section */
-  .cards{
+  .cards {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 30px;
   }
   .cards .card {
     height: auto;
   }
+  .see-more-btn {
+    text-align: center;
+    padding: 20px 0;
+  }
 
+  /* features section */
+  .feature-container .feature-content {
+    flex-direction: column;
+  }
+  .feature-content .right-content {
+    padding: 20px 30px;
+  }
+  .feature-content .right-content {
+    text-align: center;
+}
+.feature-content .right-content h1 {
+  font-size: 24px;
+}
 }
 
 /* Responsive for Medium device */
@@ -248,8 +309,20 @@ body {
   }
 
   /* Popular card section */
-  .cards{
+  .cards {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 30px;
   }
+  .see-more-btn {
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* features section */
+  .feature-container .feature-content {
+    flex-direction: column;
+    text-align: center;
+}
+.feature-content .right-content {
+  padding: 15px 20px;
+}
 }
