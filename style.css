@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --main-color: #e02c6d;
+  --card-title-font-size: 28px;
+  --heading-text-color: #3a3a3a;
+  --p-color: #787885;
+}
+
+/* Navbar section */
+.nav {
+  width: 100%;
+}
+
+.nav .nav-container .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1240px;
+  height: 100px;
+}
+.menu {
+  display: flex;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+.menu ul li {
+  padding: 0 30px;
+  color: var(--heading-text-color);
+}
+.logo h3 {
+  font-size: 24px;
+  color: var(--heading-text-color);
+}
+.nav-icon i {
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+/* Hero section */
+.hero-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.hero-container .hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-content h1 {
+  font-size: 52px;
+  color: var(--heading-text-color);
+}
+.left-content p {
+  color: var(--p-color);
+  padding: 16px 0;
+}
+.primary-btn {
+  padding: 10px 24px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.primary-btn i {
+  font-size: 22px;
+  padding-left: 8px;
+}
+.right-img {
+  /* background-image: url(images/Circle\ design.svg); */
+  background-repeat: no-repeat;
+ 
+}
+.right-img img {
+  position: relative;
+  top: 25px;
+}
+/* Responsive for mobile device */
+@media (max-width: 576px) {
+  .hero-container .hero-content {
+    flex-direction: column;
+  }
+  .logo h3 {
+    font-size: 16px;
+  }
+  .menu ul {
+    display: none;
+  }
+  .nav-icon > :first-child {
+    display: none;
+  }
+  .nav .nav-container .nav-content {
+    padding: 0 25px;
+  }
+  .left-content {
+    text-align: center;
+    padding: 0 25px;
+  }
+  .left-content h1 {
+    font-size: 24px;
+  }
+  .left-content p {
+    font-size: 14px;
+  }
+  .right-img img {
+    width: 350px;
+}
+}
+
+/* Responsive for Medium device */
+@media (min-width:576px) and (max-width:768px) {
+  .menu ul {
+    display: none;
+}
+.nav .nav-container .nav-content {
+  padding: 0 25px;
+}
+.hero-container .hero-content {
+flex-direction: column;
+padding: 0 30px;
+}
+}
